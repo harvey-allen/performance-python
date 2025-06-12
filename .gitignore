@@ -1,0 +1,55 @@
+# === Python / Poetry ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+
+# Poetry virtualenvs
+.env/
+.venv/
+.envrc
+.poetry.lock
+
+# Pytest / test cache
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# === Rust ===
+/rust_backend/target/
+**/*.rs.bk
+Cargo.lock 
+target/
+
+# === Maturin Builds ===
+*.so
+*.dylib
+*.dll
+*.pyd
+build/
+dist/
+rust_backend/*.egg-info/
+
+# === OS / Editor / IDE ===
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# === Misc ===
+*.orig
+*.swp
+*.swo

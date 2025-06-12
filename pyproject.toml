@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "performance_template"
+version = "0.1.0"
+description = ""
+authors = ["Harvey Allen <57222485+harvey-allen@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "template"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dotenv = "^0.9.9"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^1.8.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
