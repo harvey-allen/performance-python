@@ -8,6 +8,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.21", features = ["extension-module"] }
+regex = "1"
 
 [package.metadata.maturin]
 name = "processing"
