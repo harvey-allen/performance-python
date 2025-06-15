@@ -9,7 +9,7 @@
         "options": {
           "cwd": "${workspaceFolder}/processing",
         },
-        "problemMatcher": []
+        "problemMatcher": ["$rustc"]
       }
     ]
   }
