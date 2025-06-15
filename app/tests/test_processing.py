@@ -7,8 +7,8 @@ class TestAdditionFunction(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_add_positive_numbers(self):
-        self.assertEqual(processing.add(1, 1), 2)
+    def test_fibonacci(self):
+        self.assertEqual(processing.heavy_computation(10), 55)
 
 
 if __name__ == "__main__":
