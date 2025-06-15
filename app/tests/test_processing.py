@@ -2,7 +2,7 @@ import unittest
 
 import processing
 
-class TestAdditionFunction(unittest.TestCase):
+class TestFibonacciFunction(unittest.TestCase):
 
     def setUp(self):
         pass
