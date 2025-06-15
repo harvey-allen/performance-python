@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "tasks": [
+    {
+        "label": "Build Rust",
+        "type": "shell",
+        "command": "bash",
+        "args": ["-c", "unset CONDA_PREFIX && poetry run maturin develop --release"],
+        "options": {
+          "cwd": "${workspaceFolder}/processing",
+        },
+        "problemMatcher": ["$rustc"]
+      }
+    ]
+  }

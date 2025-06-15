@@ -1,0 +1,15 @@
+{
+    "version": "1.0.1",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {"PYTHONPATH": "${workspaceFolder}"},
+            "preLaunchTask": "Build Rust"
+        }
+    ]
+} 

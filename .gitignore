@@ -42,9 +42,6 @@ rust_backend/*.egg-info/
 .DS_Store
 Thumbs.db
 
-# VS Code
-.vscode/
-
 # JetBrains
 .idea/
 *.iml
