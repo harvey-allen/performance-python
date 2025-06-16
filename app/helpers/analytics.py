@@ -35,7 +35,7 @@ def measure_performance(label):
             start_time = time.time()
             start_cpu = psutil.cpu_percent(interval=None)
             process = psutil.Process(os.getpid())
-            start_memory = process.memory_info().rss / (1024 * 1024)  # in MB
+            start_memory = process.memory_info().rss / (1024 * 1024) # in MB
 
             # Execute the function
             result = func(*args, **kwargs)
@@ -43,10 +43,10 @@ def measure_performance(label):
             # Measure after execution
             end_time = time.time()
             end_cpu = psutil.cpu_percent(interval=None)
-            end_memory = process.memory_info().rss / (1024 * 1024)  # in MB
+            end_memory = process.memory_info().rss / (1024 * 1024) # in MB
             current, peak = tracemalloc.get_traced_memory()
 
-            # logger.info performance metrics
+            # Log performance metrics
             logger.info(f"\nPerformance metrics for: {label}")
             logger.info(f"Time taken: {end_time - start_time:.4f} seconds")
             logger.info(f"CPU usage (start/end): {start_cpu}% / {end_cpu}%")
