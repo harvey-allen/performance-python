@@ -9,6 +9,7 @@ packages = [{include = "template"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 dotenv = "^0.9.9"
+psutil = "7.0.1"
 
 [tool.poetry.group.dev.dependencies]
 maturin = "^1.8.6"
